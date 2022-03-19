@@ -1,0 +1,74 @@
+.map{
+    width:max-content;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.title{
+    text-align: center;
+font-size: 2.5rem;
+font-weight: 700;
+font-family: sans-serif;
+color: #6e6e6e;
+}
+.sub{
+    text-align: center;
+font-size: 2.5rem;
+font-weight: 700;
+font-family: sans-serif;
+color: #219F94;
+}
+
+.left{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+position: absolute;
+top: 10px;
+left: 50px;
+font-size: 1.5rem;
+color: white;
+font-weight: 700;
+}
+.right{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+.right a{
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+}
+
+.right .active{
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    border-bottom: 3px solid white;
+}
+.inputsection{
+    position: absolute;
+    top: 200px;
+    left: 24px;
+    width: 30rem;
+}
+.heading{
+font-size: 2.2rem;
+font-weight: 700;
+color: white;
+letter-spacing: 0.03em;
+margin-bottom: 16px;
+}
+.subheading{
+    color: white;
+font-weight: 400;
+opacity: 0.8;
+line-height: 1.4rem;
+margin-bottom: 16px;
+letter-spacing: 0.03em;
+    }
+

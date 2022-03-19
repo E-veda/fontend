@@ -1,0 +1,37 @@
+.name{
+    display: -webkit-box !important;
+-webkit-box-orient: vertical !important;
+-webkit-line-clamp: 1 !important;
+overflow: hidden !important ;
+font-size: 1rem;
+font-weight: 500;
+color: #333;
+}
+.address{
+    display: -webkit-box !important;
+-webkit-box-orient: vertical !important;
+-webkit-line-clamp: 1 !important;
+overflow: hidden !important ;
+color: #9e9e9e;
+font-size: 0.875rem;
+letter-spacing: 0.03em;
+font-weight: 400;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 8px;
+}
+.btn{
+    background: #A1BA90;
+padding: 8px 16px;
+margin-right: 8px;
+border-radius: 3px;
+}
+.rate{
+  color: #6e6e6e;
+  font-weight: 500;
+  font-size: 14px;
+margin-left: 3px;
+}
