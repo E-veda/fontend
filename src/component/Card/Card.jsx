@@ -14,6 +14,7 @@ export default function HospitalCard(props) {
     <>
     <Row gutter={[16, 24]} style={{padding:"28px",margin:"0px"}}>
         {data.map((item)=> <Col xs={24} sm={12} md={12} lg={8} xl={6} xxl={6} className="gutter-row" span={6}>
+          <a href={`hospital/${item.place_id}`}>
       <Card
     hoverable
     // style={{ width: 260 }}
@@ -24,11 +25,11 @@ export default function HospitalCard(props) {
     <Rate disabled defaultValue={item.rating} /> <span className={styles.rate}>({item.user_ratings_total})</span>
 
     <div className={styles.bottom}>
-      <div  className={styles.btn}><PhoneOutlined style={{color:"white"}}/></div>
       <div  className={styles.btn}><GoogleOutlined style={{color:"white"}}/></div>
       <div  className={styles.btn}><GlobalOutlined style={{color:"white"}}/></div>
     </div>
   </Card>
+  </a>
       </Col>)}
     </Row>
     </>
