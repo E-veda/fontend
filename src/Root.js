@@ -19,6 +19,7 @@ import { useVoice } from "../src/utils/useVoice";
 import { Select } from "antd";
 import { useLocation } from "react-router-dom";
 import { cities, results } from "./constants";
+import { sortArray } from "./utils/utils";
 const { Option } = Select;
 
 const containerStyle = {
@@ -64,6 +65,9 @@ function Root(props) {
     setSearch("");
     if (path == "hospitals" || path=="") {
       setSelect("Near me");
+      const newData = sortArray(data,center)
+      console.log(newData);
+      setData(newData);
     } else {
       setData(tempData);
       setSelect(path);
@@ -158,6 +162,11 @@ function Root(props) {
   function createKey(location) {
     return location.lat + location.lng;
   }
+
+  const handleNearBy = () => {
+    const newData = sortArray(data,center)
+    setData(newData);
+  }
   const onSearch = (value) => console.log(value);
   // AIzaSyCcin2QQdbU-Uqj5H1V_WSg6DhooXCKUuo
 
@@ -228,7 +237,7 @@ function Root(props) {
           /> */}
           </div>
         )}
-        {select!="Near me" && <Button className='nearme'><a href="/hospital">Search hospitals Near me</a></Button>}
+        {select!="Near me" && <Button onClick={handleNearBy} className='nearme'><a href="/hospitals">Search hospitals Near me</a></Button>}
       </div>
 
 
