@@ -8,15 +8,17 @@ import {
 } from "react-router-dom";
 import Home from './component/Home/Home';
 import HospitalPage from './component/HospitalPage/HospitalPage';
+import About from './component/About/About';
 function App(props) {
 
   return (
     <Router>
-        <Routes >
+      <Routes >
         <Route path="/hospital/:place_id" element={<HospitalPage/>}/>
         <Route path="/hospitals/" element={<Root />}/>
-          <Route path="/hospitals/:city" element={<Root {...props}/>}/>
-          <Route path="/"  element={<Home/>}/>
+        <Route path="/hospitals/:city" element={<Root {...props}/>}/>
+        <Route path="/"  element={<Home/>}/>
+        <Route path="/About"  element={<About/>}/>
         </Routes >
     </Router>
 

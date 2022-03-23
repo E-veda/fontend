@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './Home.module.css';
 import HomeImg from '../../assets/HomeImg.svg'
 import Map from '../../assets/Map.svg'
+import naturopathy from '../../assets/naturopathy.svg'
 import { Input } from 'antd';
 import { AudioOutlined } from '@ant-design/icons';
 import { cities, results } from '../../constants';
@@ -71,33 +72,34 @@ export default function Home() {
       };
   return (
       <>
-    <div style={{position:"relative"}}><img style={{width:"100%"}} src={HomeImg}/>
-        <div className={styles.left}>E-veda</div>
+    <div className={styles.pdiv}>
+      {/* <img src={HomeImg} className={styles.bgimg}/> */}
         <div className={styles.right}>
             <a className={styles.active} href='/'>Home</a>
             <a href='/hospitals'>Hospitals</a>
             <a>Language</a>
-            <a href='/aboutus'>About us</a>
-        </div>
+            <a href='/About'>About us</a>
+          </div>
+      {/* <div className="homepage"> */}
+        <div className={styles.left}><img src={naturopathy} alt="logo" /></div>
+
         <div className={styles.inputsection}>
-        <div className={styles.heading}>Search Ayush hospitals</div>
-        <div className={styles.subheading}>sknslnlsn lmlnglsfng nfsglnlngsfn lnflgn lsfnglnfglsfgslf
-        sgslfgnlsfnglfsng
-        sgsfglsfglsfglsfnglsnfglsflgm lmlmsflgmslgmlsngsfglsmfg
-        sfglksflglsfmglfsmglmsflgmfdlmgldfm lnrkjn nerannwenknkfnkrnglangknrkgnrs
-        al;fnrkngsngna nssnsnglslgnsgnsnglsfnglsfngnsgnskfsfjsngrjtrjioafnani4jrnjganlfnnlnl</div>
-        <div
-        style={{
-          textAlign: "center",
-          position: "relative",
-          margin: "0 auto",
-        }}
-      >
+        <div className={styles.marker_animation}>
+          <div className={styles.pin}></div>
+          <div className={styles.pulse}></div>
+        </div>
+        <div className={styles.heading}>
+          Yield benefits, not side effects
+        </div>
+        <div className={styles.subheading}>
+          Consult at nearest hospital!
+        </div>
+        <div>
         <Input placeholder="Enter city or hospital name" value={search}
           onChange={onHandleSearch} suffix={suffix} />
-        {search && (
+          {search && (
           <div className="search_result">
-			{citiesData.length==0 && data.length==0 && <div className='no_result'>No results found</div>}
+            {citiesData.length==0 && data.length==0 && <div className='no_result'>No results found</div>}
             {citiesData.length > 0 && <div className="search_head">Cities</div>}
             <div className="search_name">
               {citiesData.map((item, index) => (
@@ -128,7 +130,9 @@ export default function Home() {
         )}
         </div>        
         </div>
-        </div>
+      {/* </div> */}
+    </div>
+
     <div className={styles.map}>
         <div className={styles.title}>Get start search</div>
         <div className={styles.sub}>connect with E-Veda</div>
