@@ -94,11 +94,11 @@ export default function Home() {
         <div className={styles.subheading}>
           Consult at nearest hospital!
         </div>
-        <div>
+        <div style={{position:"relative"}}>
         <Input placeholder="Enter city or hospital name" value={search}
           onChange={onHandleSearch} suffix={suffix} />
           {search && (
-          <div className="search_result">
+          <div className="search_result" style={{marginTop:"1px"}}>
             {citiesData.length==0 && data.length==0 && <div className='no_result'>No results found</div>}
             {citiesData.length > 0 && <div className="search_head">Cities</div>}
             <div className="search_name">

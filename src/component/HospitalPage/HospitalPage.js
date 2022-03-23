@@ -53,23 +53,21 @@ export default function HospitalPage() {
              <Rate disabled defaultValue={data.rating} />
              </div>
              <div className={styles.btn}>
-             <Button className={styles.direction}>Direction</Button>
-             <Button className={styles.web}>Website</Button>
+             <a href={data.map}><Button className={styles.direction}>Direction</Button></a>
+             <a href={data.website}><Button className={styles.web}>Website</Button></a>
              </div>
              </div>
             
              </div>
              <div className={styles.bottom}>
              <Tabs defaultActiveKey="1" >
-    <TabPane tab="Tab 1" key="1">
+    <TabPane tab="About" key="1">
       Content of Tab Pane 1
     </TabPane>
-    <TabPane tab="Tab 2" key="2">
+    <TabPane tab="Reviews" key="2">
       Content of Tab Pane 2
     </TabPane>
-    <TabPane tab="Tab 3" key="3">
-      Content of Tab Pane 3
-    </TabPane>
+
   </Tabs>
              </div>
             </Col>

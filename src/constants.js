@@ -7,7 +7,7 @@ export const cities = [
   "Pune",
   "Gwalior",
 ];
-export const results = [
+export const result = [
   {
     business_status: "OPERATIONAL",
     geometry: {
@@ -976,17 +976,18 @@ export const results = [
   },
 ];
 
-export const data = [
+export const results = [
   {
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME9",
     name: "JP hospital",
-    website:"http://www.jphospital.org/",
+    website: "http://www.jphospital.org/",
     "contact no": 7552557142,
     vicinity:
       "No 1250, Link Road No 2, Tulsi Nagar, Bhopal - 462003, Shivaji Nagar",
     "pin code": 462001,
     Opens: "All Days",
-    "image" : "https://images.app.goo.gl/eiPQvbvC4kTwbTN79",
-    "map" : "https://goo.gl/maps/JJwFgVZTGTxT4zLu8",
+    image: "https://images.app.goo.gl/eiPQvbvC4kTwbTN79",
+    map: "https://goo.gl/maps/JJwFgVZTGTxT4zLu8",
     geometry: {
       location: {
         lat: 23.23011246558428,
@@ -997,6 +998,7 @@ export const data = [
   },
 
   {
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME8",
     name: "Ayush Clinic & Ayurvedic Panchkarma Center",
     "contact no": 9329707844,
     vicinity:
@@ -1009,19 +1011,20 @@ export const data = [
         Lng: 77.65741675689894,
       },
     },
-    "image" : "https://images.app.goo.gl/eiPQvbvC4kTwbTN79",
-    map:"https://www.google.com/maps/dir//Ayush+Clinic+%26+Ayurvedic+Panchkarma+Center/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3970bbf9309d3263:0x9bc8730ecde84a4c?sa=X&ved=2ahUKEwj6rJqTsNv2AhVYsVYBHd35CGcQ9Rd6BAgqEAM",
+    image: "https://images.app.goo.gl/eiPQvbvC4kTwbTN79",
+    map: "https://www.google.com/maps/dir//Ayush+Clinic+%26+Ayurvedic+Panchkarma+Center/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3970bbf9309d3263:0x9bc8730ecde84a4c?sa=X&ved=2ahUKEwj6rJqTsNv2AhVYsVYBHd35CGcQ9Rd6BAgqEAM",
     Opens: "(9:30am–9pm) all Days",
   },
 
   {
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME7",
     name: "District Ayurveda Hospital",
     vicinity: "- Ramziriyanear Govardhan Temple, Shivaji Nagar Ward,Sagar",
     Opens: "(9:00am-6:00pm) , Sunday closed",
     "pin code": 462016,
     rating: 4.3,
-    "image" : "https://images.app.goo.gl/BFgaXmzzSsAksRtT9",
-    "map" : "https://goo.gl/maps/vGt7dPQm1qSQyE1J7",
+    image: "https://images.app.goo.gl/BFgaXmzzSsAksRtT9",
+    map: "https://goo.gl/maps/vGt7dPQm1qSQyE1J7",
     geometry: {
       location: {
         lat: 23.225548547390225,
@@ -1031,13 +1034,14 @@ export const data = [
   },
 
   {
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME6",
     name: "Pandit Khushilal Ayurvedic Mahavidhyalay Evam Hospital",
     vicinity: "Chuna Bhatti, Bhopal, Madhya Pradesh",
     "pin code": 462007,
     Opens: "24*7",
     rating: 4.8,
-    "image" : "https://images.app.goo.gl/xvVqCxx4unLx2v2S7",
-    "map" : "https://goo.gl/maps/LcRGW36MGNhALUhH6",
+    image: "https://images.app.goo.gl/xvVqCxx4unLx2v2S7",
+    map: "https://goo.gl/maps/LcRGW36MGNhALUhH6",
     geometry: {
       location: {
         lat: 23.20540056742532,
@@ -1049,14 +1053,15 @@ export const data = [
   },
 
   {
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME5",
     name: "Govt. Ayurved Hospital",
     "Hours of Operation": "24*7",
     vicinity: "Govt. Ayurved Hospital, Rau, Indore",
     "pin code": 453331,
     Opens: "24*7",
     rating: 3,
-    "image" : "https://images.app.goo.gl/C563nRp87r6pVUFA7",
-    "map" : "https://g.page/govt-ayurved-hospital-rau-indore?share",
+    image: "https://images.app.goo.gl/C563nRp87r6pVUFA7",
+    map: "https://g.page/govt-ayurved-hospital-rau-indore?share",
     geometry: {
       location: {
         lat: 22.6367655828269,
@@ -1066,6 +1071,7 @@ export const data = [
   },
 
   {
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME4",
     name: "Govt. Ashtang Ayurved College",
     vicinity:
       "Babu Lalchand Chajlani Rd, Lokmanya Nagar, Indore, Madhya Pradesh",
@@ -1073,8 +1079,9 @@ export const data = [
     website: "http://www.gaacindore.edu.in/",
     Opens: "24*7",
     rating: 2,
-     "image" : "https://images.app.goo.gl/JFmbTPv71QxT5Zwb9",
-    "map" : "https://goo.gl/maps/HS1YsgcGvkYRhaGU7",
+    image: "https://images.app.goo.gl/JFmbTPv71QxT5Zwb9",
+    map: "https://goo.gl/maps/HS1YsgcGvkYRhaGU7",
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME4",
     geometry: {
       location: {
         lat: 22.69450755938247,
@@ -1090,8 +1097,8 @@ export const data = [
     "Pin code": 462003,
     contact: 7552970351,
     rating: 2.8,
-    "image" : "https://images.app.goo.gl/BwQZ4Vd1d8RTrsiU9",
-    "map" : "https://g.page/hszh-bpl?share",
+    image: "https://images.app.goo.gl/BwQZ4Vd1d8RTrsiU9",
+    map: "https://g.page/hszh-bpl?share",
     geometry: {
       location: {
         lat: 23.215848811907353,
@@ -1099,6 +1106,7 @@ export const data = [
       },
     },
     website: "https://gumcbhopal.in/",
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME3"
   },
 
   {
@@ -1106,8 +1114,8 @@ export const data = [
     vicinity: "Ayurvedic Hospital Chowk Bazar Road Chhatarpur Madhya Pradesh",
     "Pin code": 471001,
     rating: 4,
-    "image" : "https://images.app.goo.gl/RRfknPBMEeQPxDKL6",
-    "map" : "https://goo.gl/maps/MsZe92fY6zaYc2bg8",
+    image: "https://images.app.goo.gl/RRfknPBMEeQPxDKL6",
+    map: "https://goo.gl/maps/MsZe92fY6zaYc2bg8",
     geometry: {
       location: {
         lat: 24.917436828467412,
@@ -1115,6 +1123,7 @@ export const data = [
       },
     },
     Opens: "(8am–12pm, 4pm–9pm), all days",
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME2"
   },
 
   {
@@ -1129,8 +1138,9 @@ export const data = [
         lng: 81.37024519763001,
       },
     },
-    "image" : "https://images.app.goo.gl/NPfy2TbFwCq7uksT7",
-    "map" : "https://goo.gl/maps/a5obqB1CEH1bKcT88",
+    image: "https://images.app.goo.gl/NPfy2TbFwCq7uksT7",
+    map: "https://goo.gl/maps/a5obqB1CEH1bKcT88",
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME1",
     Opens: "(8:00am-6:00pm), all days",
   },
 ];
