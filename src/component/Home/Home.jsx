@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Home.module.css';
+import sectionstyles from '../sections/section.module.css';
 import HomeImg from '../../assets/HomeImg.svg'
 import Map from '../../assets/Map.svg'
 import naturopathy from '../../assets/naturopathy.svg'
+import bodychakras from '../../assets/3921140.jpg'
 import { Input } from 'antd';
 import { AudioOutlined } from '@ant-design/icons';
 import { cities, results } from '../../constants';
@@ -115,7 +117,7 @@ export default function Home() {
 
   return (
       <>
-    <div className={styles.pdiv}>
+    <div className={sectionstyles.basic}>
       {/* <img src={HomeImg} className={styles.bgimg}/> */}
         <div className={styles.right}>
             <a className={styles.active} href='/'>Home</a>
@@ -137,11 +139,11 @@ export default function Home() {
         <div className={styles.subheading}>
           Consult at nearest hospital!
         </div>
-        <div style={{position:"relative"}}>
+        <div>
         <Input placeholder="Enter city or hospital name" value={search}
           onChange={onHandleSearch} suffix={suffix} />
           {search && (
-          <div className="search_result" style={{marginTop:"1px"}}>
+          <div className="search_result">
             {citiesData.length==0 && data.length==0 && <div className='no_result'>No results found</div>}
             {citiesData.length > 0 && <div className="search_head">Cities</div>}
             <div className="search_name">
@@ -175,12 +177,29 @@ export default function Home() {
         </div>
       {/* </div> */}
     </div>
-
     <div className={styles.map}>
-        <div className={styles.title}>Get start search</div>
-        <div className={styles.sub}>connect with E-Veda</div>
-    <img style={{width:"350px",marginTop:"10px"}} src={Map}/> 
+      <img src={Map}/> 
+      <div className={styles.mapright}>
+        <p className={styles.heading} style={{color: '#47654d',}}>Do you know</p>
+        <p className={sectionstyles.text}>There are approximately 4000 Ayush hospitals across India distributed under different council and hospitals of the government of India.</p>
+      </div>
     </div>
+
+    <div className={styles.ayushmean}>
+      <div className={styles.ayushmeanchild}>
+        <p className={styles.shloktext}>"Swasthasya Swasthya Rakshanam<br></br>Aturasya Vikara Prashamanam Cha"</p>
+        <p className={styles.shlokheading} style={{color: '#f4c23d',}}>स्वस्थस्य स्वास्थ्य रक्षणं <br></br>आतुरस्य विकार प्रशमनं च </p>
+        <p className={styles.shloktext}>i.e. to help the healthy person to protect & maintain his swasthya ( wellness)<br></br> To help a diseased person to become healthy & to stay healthy forever.</p>
+      </div>
+    </div>
+    <div className={styles.ayushfull}>
+      <span className={styles.heading} style={{color: '#ff9348',}}>A</span><span className={sectionstyles.text}> Ayurveda</span>
+      <span className={styles.heading} style={{color: '#86c81c',}}>Y</span><span className={sectionstyles.text}> Yoga and Naturopathy</span>
+      <span className={styles.heading} style={{color: '#f2c448',}}>U</span><span className={sectionstyles.text}> Unani</span>
+      <span className={styles.heading} style={{color: '#f66785',}}>S</span><span className={sectionstyles.text}> Siddha</span>
+      <span className={styles.heading} style={{color: '#01aed8',}}>H</span><span className={sectionstyles.text}> Homeopathy</span>
+    </div> 
+
    
     </>
   )

@@ -46,73 +46,82 @@ export default function HospitalPage() {
           className="gutter-row"
           span={6}
         >
-          <div className={styles.head}>
-            <a href="/hospitals">
-              {" "}
-              <ArrowLeftOutlined
-                style={{ color: "white", fontSize: "20px", cursor: "pointer" }}
-              />
-            </a>{" "}
-            <div className={styles.title}>E-Veda</div>
-          </div>
+
           {/* <Divider style={{margin:"12px 0"}}/>  */}
           <div className={styles.upper}>
-            <div className={styles.left}>
-              <img
-                className={styles.img}
-                height={250}
-                alt="example"
-                src={data.image}
-              />
+          <div className={styles.left}>
+            <img
+                  className={styles.img}
+                  alt="example"
+                  src={data.image}
+                />
             </div>
             <div className={styles.right}>
-              <div className={styles.name}>{data.name}</div>
+              <div className={styles.name}>
+                {data.name}
+              </div>
               <div className={styles.add}>
                 {data.vicinity}
                 {/* <br />
                 {data.opens} */}
               </div>
-              <div className={styles.stars}>
-                <Rate disabled defaultValue={data.rating} />
+                
+              <div className={styles.about} style={{color:'#3ba998'}}>
+                  Contact -{" "}
+                  <a className={styles.answer}>{data.contact}</a>{" "}
+                </div>
+                <div className={styles.about} style={{color:'#3ba998'}}>
+                  Opens - <span className={styles.answer}>{data.opens}</span>
               </div>
+
               <div className={styles.btn}>
-                <a href={data.map}>
-                  <Button className={styles.direction}>Direction</Button>
+                <a href={data.map} className={styles.fillbutton}>
+                <span className={styles.fillbuttonhover}>		
+    <span className={styles.fillbuttontext}>Get Direction </span>
+  </span>
                 </a>
-                <a href={data.website}>
-                  <Button className={styles.web}>Website</Button>
-                </a>
+                <a href={data.website} className={styles.fillbutton}>
+                <span className={styles.fillbuttonhover}>		
+    <span className={styles.fillbuttontext}>Website </span>
+  </span>                
+  </a>
               </div>
+
             </div>
           </div>
+
+          
           <div className={styles.bottom}>
             <Tabs defaultActiveKey="1">
               <TabPane tab="About" key="1">
                 <div className={styles.about}>
                   {data.about ? data.about : ""}
                 </div>
+                <div className={styles.stars}>
+                <Rate disabled defaultValue={data.rating} />
+              </div>
                 <br />
-                <div className={styles.about}>
+                {/* <div className={styles.about}>
                   Address -{" "}
                   <span className={styles.answer}>{data.vicinity}</span>{" "}
-                </div>
-                <br />
-                <div className={styles.about}>
-                  Contact -{" "}
-                  <span className={styles.answer}>{data.contact}</span>{" "}
-                </div>
-                <br />
-                <div className={styles.about}>
-                  Opens - <span className={styles.answer}>{data.opens}</span>
-                </div>
+                </div> */}
               </TabPane>
               <TabPane tab="Services" key="2">
                 <ol>{data.services ? data.services.split(',').map((item)=><li className={styles.services}>{item}</li>) : ""}</ol>
               </TabPane>
               <TabPane tab="Reviews" key="3">
-                {data.services ? data.services : ""}
+                {data.Reviews ? data.Reviews : ""}
               </TabPane>
             </Tabs>
+          </div>
+          <div className={styles.head}>
+            <a href="/hospitals">
+              {" "}
+              <ArrowLeftOutlined
+                style={{ color: "white", fontSize: "15px", cursor: "pointer" }}
+              />
+            </a>{" "}
+            <div className={styles.title}>E-Veda</div>
           </div>
         </Col>
         <Col
