@@ -233,6 +233,7 @@ function Root(props) {
           value={search}
           onChange={onHandleSearch}
           suffix={suffix}
+          style={{width:'50%', position:'fixed', right:'0', zIndex:'10'}}
         />
         {search && (
           <div className="search_result">

@@ -37,4 +37,89 @@
       background-position: 0% 50%;
     }
   }
+  /* .right{
+    position: fixed;
+    top: 10px;
+    right: 40px;
+
+  }
+  .right a{
+    color: #219F94;
+    font-size: 1.1rem;
+    margin-left: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+  }
   
+  .right .active{
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    border-bottom: 3px solid white;
+  } */
+  .fillbutton {
+    position: relative;
+    overflow:hidden;
+    display:inline-block;
+    width:150px;
+    height:40px;
+    margin: .2rem;
+    padding: .2rem;
+    border:2px solid #3ba998;
+    text-align:center;
+    box-sizing:border-box;
+    color:#3ba998;
+    text-decoration:none;
+    cursor: pointer;
+    line-height:28px;
+    font-family: 'arial';
+    border-radius: 5px;
+  }
+  .fillbutton > span {
+    display:block;
+  }
+  .fillbutton > .fillbuttonhover:after, .fillbutton > .fillbuttonhover:before {
+    position:absolute;
+    top:0;
+    opacity:0;
+    display:block;
+    content:"";
+    width:0;
+    height:40px;
+  }
+  .fillbutton > .fillbuttonhover:after {
+    background-color:#f0ffff;
+    transform:skewX(45deg);
+    transform-origin:center center;
+    transition:all .35s, opacity .4s;
+    left:50%;
+  }
+  .fillbutton .fillbuttonhover:before {
+    background-color:#ff9348;
+    transition:opacity 1s;
+  }
+  
+  .fillbutton .fillbuttontext {
+    z-index:1;
+    position:relative;
+    color:#3ba998;
+    transition:color .35s;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .fillbutton:hover .fillbuttontext {
+    color:#3ba998;
+  }
+  .fillbutton .fillbuttonhover:hover:after {
+    opacity:1;
+    left:2%;
+    width:95%;
+    transform:skewX(45deg);
+  }
+  .fillbutton > .fillbuttonhover:hover:before {
+    opacity: 1;
+    left: 0;
+    width:100%;
+  }

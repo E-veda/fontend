@@ -177,11 +177,23 @@ export default function Home() {
         </div>
       {/* </div> */}
     </div>
+
+
     <div className={styles.map}>
       <img src={Map}/> 
       <div className={styles.mapright}>
         <p className={styles.heading} style={{color: '#47654d',}}>Do you know</p>
         <p className={sectionstyles.text}>There are approximately 4000 Ayush hospitals across India distributed under different council and hospitals of the government of India.</p>
+        <div className={styles.btn}>
+          <a href={data.map} className={sectionstyles.fillbutton}>
+            <span className={sectionstyles.fillbuttonhover}>		
+              <a href='/hospitals' className={sectionstyles.fillbuttontext}>
+                Search now
+              </a>
+            </span>
+            </a>
+            </div>
+
       </div>
     </div>
 

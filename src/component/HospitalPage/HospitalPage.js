@@ -8,6 +8,7 @@ import {
 import { Button, Col, Divider, Rate, Row, Spin, Tabs } from "antd";
 import React, { useEffect, useState } from "react";
 import styles from "./HospitalPage.module.css";
+import sectionstyles from '../sections/section.module.css';
 import { results } from "../../constants";
 import { useLocation } from "react-router-dom";
 const { TabPane } = Tabs;
@@ -49,14 +50,14 @@ export default function HospitalPage() {
 
           {/* <Divider style={{margin:"12px 0"}}/>  */}
           <div className={styles.upper}>
-          <div className={styles.left}>
-            <img
+            <div className={styles.left}>
+              <img
                   className={styles.img}
                   alt="example"
                   src={data.image}
                 />
-            </div>
-            <div className={styles.right}>
+              </div>
+              <div className={styles.right}>
               <div className={styles.name}>
                 {data.name}
               </div>
@@ -75,14 +76,14 @@ export default function HospitalPage() {
               </div>
 
               <div className={styles.btn}>
-                <a href={data.map} className={styles.fillbutton}>
-                <span className={styles.fillbuttonhover}>		
-    <span className={styles.fillbuttontext}>Get Direction </span>
+                <a href={data.map} className={sectionstyles.fillbutton}>
+                <span className={sectionstyles.fillbuttonhover}>		
+    <span className={sectionstyles.fillbuttontext}>Get Direction </span>
   </span>
                 </a>
-                <a href={data.website} className={styles.fillbutton}>
-                <span className={styles.fillbuttonhover}>		
-    <span className={styles.fillbuttontext}>Website </span>
+                <a href={data.website} className={sectionstyles.fillbutton}>
+                <span className={sectionstyles.fillbuttonhover}>		
+    <span className={sectionstyles.fillbuttontext}>Website </span>
   </span>                
   </a>
               </div>

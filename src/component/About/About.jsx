@@ -18,17 +18,19 @@ export default function About() {
             Opt for natural, sustainable, holistic way of healthcare, opt for AYUSH!
           </p>
         </div>
-        <h1>
-          <span>Thanks to</span>
-          <div className={styles.message}>
-            <div className={styles.word1}>Aman Sahoo</div>
-            <div className={styles.word2}>Muskan Dubey</div>
-            <div className={styles.word3}>Rohit Jain</div>
-            <div className={styles.word4}>Sarita Patel</div>
-            <div className={styles.word5}>Manav Jain</div>
-            <div className={styles.word6}>Mahima Andani (Team Lead)</div>
-          </div>
-        </h1>
+
+
+            <p className={sectionstyles.text}>
+          <b>Thanks to</b><br></br>
+            Aman Sahoo<br></br>
+            Muskan Dubey<br></br>
+            Rohit Jain<br></br>
+            Sarita Patel<br></br>
+            Manav Jain<br></br>
+            Mahima Andani<br></br>
+            </p>
+
+
       </div>
       
   )
