@@ -38,7 +38,7 @@ export default function Home() {
 
     setData(tempData);
     setCitiesData(tempCity)
-
+ 
   }
   useEffect(() => {
      if(segment){
