@@ -10,6 +10,7 @@ export default function HospitalCard(props) {
     status="404"
     title="No data available"
   />)
+  console.log(data)
   return (
     <>
     <Row gutter={[16, 24]} style={{padding:"28px",margin:"0px"}}>
@@ -18,11 +19,12 @@ export default function HospitalCard(props) {
       <Card
     hoverable
     // style={{ width: 260 }}
-    cover={<img height={250} alt="example" src={data.image} />}
+    cover={<img height={250} alt="hospital" src={item.image} />}
   > 
     <div className={styles.name}>{item.name}</div>
     <div className={styles.address}>{item.vicinity}</div>
-    <Rate disabled defaultValue={item.rating} /> <span className={styles.rate}>({item.user_ratings_total})</span>
+    <Rate disabled defaultValue={item.rating} /> 
+    {/* <span className={styles.rate}>({item.user_ratings_total})</span> */}
 
     <div className={styles.bottom}>
       {/* <div  className={styles.btn}><GoogleOutlined style={{color:"white"}}/></div>

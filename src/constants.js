@@ -986,7 +986,7 @@ export const results = [
       "No 1250, Link Road No 2, Tulsi Nagar, Bhopal - 462003, Shivaji Nagar",
     "pin code": 462001,
     Opens: "All Days",
-    image: "https://images.app.goo.gl/eiPQvbvC4kTwbTN79",
+    image: "https://images.jagran.com/naidunia/ndnimg/26062020/26_06_2020-jp_hospital_bhopal_medical_test_2020626_8054.jpg",
     map: "https://goo.gl/maps/JJwFgVZTGTxT4zLu8",
     geometry: {
       location: {
@@ -1008,7 +1008,7 @@ export const results = [
     geometry: {
       location: {
         lat: 25.416961394266433,
-        Lng: 77.65741675689894,
+        lng: 77.65741675689894,
       },
     },
     image: "https://images.app.goo.gl/eiPQvbvC4kTwbTN79",
@@ -1023,7 +1023,7 @@ export const results = [
     Opens: "(9:00am-6:00pm) , Sunday closed",
     "pin code": 462016,
     rating: 4.3,
-    image: "https://images.app.goo.gl/BFgaXmzzSsAksRtT9",
+    image: "https://images.static-collegedunia.com/public/college_data/images/appImage/10455_ayurved_new.jpg",
     map: "https://goo.gl/maps/vGt7dPQm1qSQyE1J7",
     geometry: {
       location: {
@@ -1040,7 +1040,7 @@ export const results = [
     "pin code": 462007,
     Opens: "24*7",
     rating: 4.8,
-    image: "https://images.app.goo.gl/xvVqCxx4unLx2v2S7",
+    image:  "http://www.klsgaci.edu.in/images/demo/slider/img/B06.jpg",
     map: "https://goo.gl/maps/LcRGW36MGNhALUhH6",
     geometry: {
       location: {
@@ -1060,7 +1060,7 @@ export const results = [
     "pin code": 453331,
     Opens: "24*7",
     rating: 3,
-    image: "https://images.app.goo.gl/C563nRp87r6pVUFA7",
+    image: "https://www.gaacindore.edu.in/images/Rau%20Hospital/Rau%20Hospital.jpg",
     map: "https://g.page/govt-ayurved-hospital-rau-indore?share",
     geometry: {
       location: {
@@ -1077,9 +1077,12 @@ export const results = [
       "Babu Lalchand Chajlani Rd, Lokmanya Nagar, Indore, Madhya Pradesh",
     contact: 7312473767,
     website: "http://www.gaacindore.edu.in/",
-    Opens: "24*7",
+    contact: 7312473767,
+    opens: "(8am–2pm), Monday to Saturday",
+    services:"Kayachikitsa (General Medicine), Panchakarma, Shakakaya tantra (Ophthalmology & ENT), Dentistry, Strirog & Prasutitantra (Gynecology & Obstetrics), Kaumarbhritya (Paediatrics), Attayayik Chikitsa (Casualty OPD), Swasthvritt (Community Medicine), Agad Tantra",
+    about:"The Hospital is located at College campus. Presently it's shifted in newly constructed building of approx 20,000 sq. feet area. It was inaugurated by Hon'ble Shri Jalam Singhji, Minster of AYUSH, Govt. of Madhya Pradesh. Presently OPD facilities are available for patient & IPD facility will be started shortly. It will be biggest Ayurved Hospital (capacity of 100 beds) in the city.",
     rating: 2,
-    image: "https://images.app.goo.gl/JFmbTPv71QxT5Zwb9",
+    image: "https://www.gaacindore.edu.in/images/Hospital%20College/P1010005%20fin1-gr.jpg",
     map: "https://goo.gl/maps/HS1YsgcGvkYRhaGU7",
     place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME4",
     geometry: {
@@ -1097,7 +1100,7 @@ export const results = [
     "Pin code": 462003,
     contact: 7552970351,
     rating: 2.8,
-    image: "https://images.app.goo.gl/BwQZ4Vd1d8RTrsiU9",
+    image: "https://content3.jdmagicbox.com/comp/bhopal/00/0755p755std300/catalogue/hakim-syed-ziaul-hassan-government-unani-medical-college-and-hospital-sultania-road-bhopal-hospitals-0zxfo1qvhq-250.jpg",
     map: "https://g.page/hszh-bpl?share",
     geometry: {
       location: {
@@ -1114,7 +1117,7 @@ export const results = [
     vicinity: "Ayurvedic Hospital Chowk Bazar Road Chhatarpur Madhya Pradesh",
     "Pin code": 471001,
     rating: 4,
-    image: "https://images.app.goo.gl/RRfknPBMEeQPxDKL6",
+    image: "https://indiasthan.cdnpro.in/states/mp/chhatarpur/ayurvedic_colleges/government-ayurvedic-college-hospital-180289.jpg",
     map: "https://goo.gl/maps/MsZe92fY6zaYc2bg8",
     geometry: {
       location: {
@@ -1134,11 +1137,11 @@ export const results = [
     rating: 5,
     geometry: {
       location: {
-        at: 23.311175871479808,
+        lat: 23.311175871479808,
         lng: 81.37024519763001,
       },
     },
-    image: "https://images.app.goo.gl/NPfy2TbFwCq7uksT7",
+    image: "https://th.bing.com/th/id/R.5470ab6881202c58c0c319cf4141fee8?rik=RGxA3jHMCN7ASg&riu=http%3a%2f%2fthephoenixpostindia.com%2fwp-content%2fuploads%2f2018%2f06%2fAyush-hospital-port-blair.jpg&ehk=zRvMd4nTrtICXSBnDmDzv%2bVHlcuNA20hFsAgnXII2M0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
     map: "https://goo.gl/maps/a5obqB1CEH1bKcT88",
     place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME1",
     Opens: "(8:00am-6:00pm), all days",

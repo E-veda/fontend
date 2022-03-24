@@ -20,6 +20,8 @@ import { Select } from "antd";
 import { useLocation } from "react-router-dom";
 import { cities, results } from "./constants";
 import { sortArray } from "./utils/utils";
+import { useSpeechContext } from "@speechly/react-client";
+import { renderIntoDocument } from "react-dom/test-utils";
 const { Option } = Select;
 
 const containerStyle = {
@@ -30,17 +32,24 @@ const containerStyle = {
   width: "94%",
 };
 
+
+
+
 function Root(props) {
+  const { speechState, segment, toggleRecording } = useSpeechContext()
   const location = useLocation();
   const options = { closeBoxURL: "", enableEventPropagation: true };
   const [center, setCenter] = useState({ lat: 0, lng: 0 });
-  const { text, isListening, listen, voiceSupported } = useVoice();
+  // const { text, isListening, listen, voiceSupported } = useVoice();
   const [citiesData, setCitiesData] = useState([]);
   const [data, setData] = useState(results);
-  const [search, setSearch] = useState(text);
+  const [search, setSearch] = useState("");
   const [select, setSelect] = useState(null);
+  const [micColor, setMicColor] = useState("red");
   const [currIndex, setCurrIndex] = useState();
-
+  const [text, setText] = useState('');
+  const [isListening, setIsListening] = useState(false);
+  
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function (position) {
       setCenter({
@@ -48,7 +57,40 @@ function Root(props) {
         lng: position.coords.longitude,
       });
     });
-  }, []);
+  },[]);
+
+  const searchItem = (item) => {
+    item=item.toLowerCase().trim();
+    let tempCity = [];
+    cities.map((city)=>{
+      if(city.toLowerCase().indexOf(item)>0 || item.indexOf(city.toLowerCase())>0){
+        tempCity.push(city);
+      }
+    })
+
+    let tempData = [];
+    results.map((ele)=>{
+      if(ele.name.toLowerCase().indexOf(item)>0 || item.indexOf(ele.name.toLowerCase())>0 || ele.vicinity.toLowerCase().indexOf(item)>0){
+        tempData.push(ele);
+      }
+    })
+
+    setData(tempData);
+    setCitiesData(tempCity)
+
+  }
+  useEffect(() => {
+     if(segment){
+      let res = "";
+      segment.words.map((item)=>{
+        searchItem(item.value);
+        res=res+""+item.value+" ";
+      })
+      setSearch(res);
+      if(segment.isFinal) {toggleRecording()
+      setMicColor("red")};
+     }
+  },[segment]);
 
   useEffect(() => {
     const path = location.pathname.substring(
@@ -85,15 +127,19 @@ function Root(props) {
     setData(tempData);
   };
 
+
+  
+
   const suffix = (
     <AudioOutlined
-      onClick={listen}
+    onClick={()=>{toggleRecording();setMicColor(micColor=="green"?"red":"green")}}
       style={{
         fontSize: 16,
-        color: "#1890ff",
+        color: micColor,
       }}
     />
   );
+
 
   const onHandleSelect = (index, type) => {
     if (type == "city") {
