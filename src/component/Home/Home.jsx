@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Home.module.css';
 import HomeImg from '../../assets/HomeImg.svg'
 import Map from '../../assets/Map.svg'
@@ -6,20 +6,51 @@ import naturopathy from '../../assets/naturopathy.svg'
 import { Input } from 'antd';
 import { AudioOutlined } from '@ant-design/icons';
 import { cities, results } from '../../constants';
-const suffix = (
-	<AudioOutlined
-	  style={{
-		fontSize: 16,
-		color: '#1890ff',
-	  }}
-	/>
-  );
+import { useSpeechContext } from '@speechly/react-client';
+
 export default function Home() {
+  const { speechState, segment, toggleRecording } = useSpeechContext()
     const [citiesData, setCitiesData] = useState([]);
     const [data, setData] = useState(results);
+    const [micColor, setMicColor] = useState("red");
     const [search, setSearch] = useState('');
     const [select, setSelect] = useState("Near me");
     const [currIndex, setCurrIndex] = useState();
+
+    
+  const searchItem = (item) => {
+    item=item.toLowerCase().trim();
+    let tempCity = [];
+    cities.map((city)=>{
+      if(city.toLowerCase().indexOf(item)>0 || item.indexOf(city.toLowerCase())>0){
+        tempCity.push(city);
+      }
+    })
+
+    let tempData = [];
+    results.map((ele)=>{
+      if(ele.name.toLowerCase().indexOf(item)>0 || item.indexOf(ele.name.toLowerCase())>0 || ele.vicinity.toLowerCase().indexOf(item)>0){
+        tempData.push(ele);
+      }
+    })
+
+    setData(tempData);
+    setCitiesData(tempCity)
+
+  }
+  useEffect(() => {
+     if(segment){
+      let res = "";
+      segment.words.map((item)=>{
+        searchItem(item.value);
+        res=res+""+item.value+" ";
+      })
+      setSearch(res);
+      if(segment.isFinal) {toggleRecording()
+      setMicColor("red")};
+     }
+  },[segment]);
+
   
     const onHandleSelect = (index, type) => {
         if (type == "city") {
@@ -70,6 +101,18 @@ export default function Home() {
         tempData.sort();
         setData(tempData);
       };
+
+      
+  const suffix = (
+    <AudioOutlined
+    onClick={()=>{toggleRecording();setMicColor(micColor=="green"?"red":"green")}}
+      style={{
+        fontSize: 16,
+        color: micColor,
+      }}
+    />
+  );
+
   return (
       <>
     <div className={styles.pdiv}>
