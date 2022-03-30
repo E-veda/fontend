@@ -986,7 +986,8 @@ export const results = [
       "No 1250, Link Road No 2, Tulsi Nagar, Bhopal - 462003, Shivaji Nagar",
     "pin code": 462001,
     Opens: "All Days",
-    image: "https://images.jagran.com/naidunia/ndnimg/26062020/26_06_2020-jp_hospital_bhopal_medical_test_2020626_8054.jpg",
+    image:
+      "https://images.jagran.com/naidunia/ndnimg/26062020/26_06_2020-jp_hospital_bhopal_medical_test_2020626_8054.jpg",
     map: "https://goo.gl/maps/JJwFgVZTGTxT4zLu8",
     geometry: {
       location: {
@@ -1023,7 +1024,8 @@ export const results = [
     Opens: "(9:00am-6:00pm) , Sunday closed",
     "pin code": 462016,
     rating: 4.3,
-    image: "https://images.static-collegedunia.com/public/college_data/images/appImage/10455_ayurved_new.jpg",
+    image:
+      "https://images.static-collegedunia.com/public/college_data/images/appImage/10455_ayurved_new.jpg",
     map: "https://goo.gl/maps/vGt7dPQm1qSQyE1J7",
     geometry: {
       location: {
@@ -1040,7 +1042,7 @@ export const results = [
     "pin code": 462007,
     Opens: "24*7",
     rating: 4.8,
-    image:  "http://www.klsgaci.edu.in/images/demo/slider/img/B06.jpg",
+    image: "http://www.klsgaci.edu.in/images/demo/slider/img/B06.jpg",
     map: "https://goo.gl/maps/LcRGW36MGNhALUhH6",
     geometry: {
       location: {
@@ -1060,7 +1062,8 @@ export const results = [
     "pin code": 453331,
     Opens: "24*7",
     rating: 3,
-    image: "https://www.gaacindore.edu.in/images/Rau%20Hospital/Rau%20Hospital.jpg",
+    image:
+      "https://www.gaacindore.edu.in/images/Rau%20Hospital/Rau%20Hospital.jpg",
     map: "https://g.page/govt-ayurved-hospital-rau-indore?share",
     geometry: {
       location: {
@@ -1075,20 +1078,86 @@ export const results = [
     name: "Govt. Ashtang Ayurved College",
     vicinity:
       "Babu Lalchand Chajlani Rd, Lokmanya Nagar, Indore, Madhya Pradesh",
-    contact: 7312473767,
+    contact: "0731-2473767",
     website: "http://www.gaacindore.edu.in/",
-    contact: 7312473767,
     opens: "(8am–2pm), Monday to Saturday",
-    services:"Kayachikitsa (General Medicine), Panchakarma, Shakakaya tantra (Ophthalmology & ENT), Dentistry, Strirog & Prasutitantra (Gynecology & Obstetrics), Kaumarbhritya (Paediatrics), Attayayik Chikitsa (Casualty OPD), Swasthvritt (Community Medicine), Agad Tantra",
-    about:"The Hospital is located at College campus. Presently it's shifted in newly constructed building of approx 20,000 sq. feet area. It was inaugurated by Hon'ble Shri Jalam Singhji, Minster of AYUSH, Govt. of Madhya Pradesh. Presently OPD facilities are available for patient & IPD facility will be started shortly. It will be biggest Ayurved Hospital (capacity of 100 beds) in the city.",
-    rating: 2,
-    image: "https://www.gaacindore.edu.in/images/Hospital%20College/P1010005%20fin1-gr.jpg",
-    map: "https://goo.gl/maps/HS1YsgcGvkYRhaGU7",
-    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME4",
+    services:
+      "Kayachikitsa (General Medicine), Panchakarma, Shakakaya tantra (Ophthalmology & ENT), Dentistry, Strirog & Prasutitantra (Gynecology & Obstetrics), Kaumarbhritya (Paediatrics), Attayayik Chikitsa (Casualty OPD), Swasthvritt (Community Medicine), Agad Tantra",
+    about:
+      "The Hospital is located at College campus. Presently it's shifted in newly constructed building of approx 20,000 sq. feet area. It was inaugurated by Hon'ble Shri Jalam Singhji, Minster of AYUSH, Govt. of Madhya Pradesh. Presently OPD facilities are available for patient & IPD facility will be started shortly. It will be biggest Ayurved Hospital (capacity of 100 beds) in the city.",
+    rating: 4.2,
+    image:
+      "https://www.gaacindore.edu.in/images/Hospital%20College/P1010005%20fin1-gr.jpg",
+    map: "https://maps.google.com/?cid=5744423289558556352",
+    place_id: "ChIJdw_DoVr8YjkRwF6e7YtKuE8",
+    user_ratings_total: 239,
+    types: ["university", "point_of_interest", "establishment"],
+    reviews: [
+      {
+        author_name: "yashraj mandloi",
+        author_url:
+          "https://www.google.com/maps/contrib/101780556307044321250/reviews",
+        language: "en",
+        profile_photo_url:
+          "https://lh3.googleusercontent.com/a-/AOh14Gj4Z-QxLmFZIaqzs11r5U4Ws1gOt8KIp0_72UQI=s128-c0x00000000-cc-rp-mo-ba4",
+        rating: 5,
+        relative_time_description: "8 months ago",
+        text: "Best hospital for ayurvedic treatment.. highly qualified professional doctors... Very very less cost for consultation . Some medicine is also provide from hospital .",
+        time: 1626168481,
+      },
+      {
+        author_name: "Aniruddh Parwal",
+        author_url:
+          "https://www.google.com/maps/contrib/101780556307044321250/reviews",
+        language: "en",
+        profile_photo_url:
+          "https://lh3.googleusercontent.com/a-/AOh14GhLa4K7Wvxee0c46FOmeXVVNvgW8Vcuhd-1t57Tc5w=s128-c0x00000000-cc-rp-mo-ba4",
+        rating: 5,
+        relative_time_description: "a year ago",
+        text: "Great infrastructure and facility by govt. Ayurved treatment is best. And great dr at this place make it more awarding to patient visiting with a hope.",
+        time: 1626168481,
+      },
+      {
+        author_name: "Aishwary Pal Jadoun",
+        author_url:
+          "https://www.google.com/maps/contrib/101780556307044321250/reviews",
+        language: "en",
+        profile_photo_url:
+          "https://lh3.googleusercontent.com/a-/AOh14GjKzb_IrthNYwZz4utwyahXmY3Q2Vl6ELX8hYsxn0g=s128-c0x00000000-cc-rp-mo-ba3",
+        rating: 5,
+        relative_time_description: "10 months ago",
+        text: "Went for covid test, very polite and good staff.Finally i got covid negative certificate..🤗",
+        time: 1626168481,
+      },
+      {
+        author_name: "Harsh Manglani",
+        author_url:
+          "https://www.google.com/maps/contrib/101780556307044321250/reviews",
+        language: "en",
+        profile_photo_url:
+          "https://lh3.googleusercontent.com/a-/AOh14GiDNbnkutUkRXnaqNOzibW54q1a9wclZOb5cJxQcA=s128-c0x00000000-cc-rp-mo",
+        rating: 5,
+        relative_time_description: "8 months ago",
+        text: "Very Good Treatment @free costs or with minimal charges.",
+        time: 1626168481,
+      },
+      {
+        author_name: "vivek tripathi",
+        author_url:
+          "https://www.google.com/maps/contrib/101780556307044321250/reviews",
+        language: "en",
+        profile_photo_url:
+          "https://lh3.googleusercontent.com/a-/AOh14GgkLMnHFs73Rx5H1JyHteJCcqxkiEyjS74VcuPdcA=s128-c0x00000000-cc-rp-mo-ba2",
+        rating: 4,
+        relative_time_description: "3 months ago",
+        text: "Nice institute... qualified doctors and staff... Good ambience",
+        time: 1626168481,
+      },
+    ],
     geometry: {
       location: {
-        lat: 22.69450755938247,
-        lng: 75.84919272532599,
+        lat: 22.6942407,
+        lng: 75.84917140000002,
       },
     },
   },
@@ -1100,7 +1169,8 @@ export const results = [
     "Pin code": 462003,
     contact: 7552970351,
     rating: 2.8,
-    image: "https://content3.jdmagicbox.com/comp/bhopal/00/0755p755std300/catalogue/hakim-syed-ziaul-hassan-government-unani-medical-college-and-hospital-sultania-road-bhopal-hospitals-0zxfo1qvhq-250.jpg",
+    image:
+      "https://content3.jdmagicbox.com/comp/bhopal/00/0755p755std300/catalogue/hakim-syed-ziaul-hassan-government-unani-medical-college-and-hospital-sultania-road-bhopal-hospitals-0zxfo1qvhq-250.jpg",
     map: "https://g.page/hszh-bpl?share",
     geometry: {
       location: {
@@ -1109,7 +1179,7 @@ export const results = [
       },
     },
     website: "https://gumcbhopal.in/",
-    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME3"
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME3",
   },
 
   {
@@ -1117,7 +1187,8 @@ export const results = [
     vicinity: "Ayurvedic Hospital Chowk Bazar Road Chhatarpur Madhya Pradesh",
     "Pin code": 471001,
     rating: 4,
-    image: "https://indiasthan.cdnpro.in/states/mp/chhatarpur/ayurvedic_colleges/government-ayurvedic-college-hospital-180289.jpg",
+    image:
+      "https://indiasthan.cdnpro.in/states/mp/chhatarpur/ayurvedic_colleges/government-ayurvedic-college-hospital-180289.jpg",
     map: "https://goo.gl/maps/MsZe92fY6zaYc2bg8",
     geometry: {
       location: {
@@ -1126,7 +1197,7 @@ export const results = [
       },
     },
     Opens: "(8am–12pm, 4pm–9pm), all days",
-    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME2"
+    place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME2",
   },
 
   {
@@ -1141,7 +1212,8 @@ export const results = [
         lng: 81.37024519763001,
       },
     },
-    image: "https://th.bing.com/th/id/R.5470ab6881202c58c0c319cf4141fee8?rik=RGxA3jHMCN7ASg&riu=http%3a%2f%2fthephoenixpostindia.com%2fwp-content%2fuploads%2f2018%2f06%2fAyush-hospital-port-blair.jpg&ehk=zRvMd4nTrtICXSBnDmDzv%2bVHlcuNA20hFsAgnXII2M0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+    image:
+      "https://th.bing.com/th/id/R.5470ab6881202c58c0c319cf4141fee8?rik=RGxA3jHMCN7ASg&riu=http%3a%2f%2fthephoenixpostindia.com%2fwp-content%2fuploads%2f2018%2f06%2fAyush-hospital-port-blair.jpg&ehk=zRvMd4nTrtICXSBnDmDzv%2bVHlcuNA20hFsAgnXII2M0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
     map: "https://goo.gl/maps/a5obqB1CEH1bKcT88",
     place_id: "ChIJ0yE_UFQdYzkRhDWxeZZiFME1",
     Opens: "(8:00am-6:00pm), all days",

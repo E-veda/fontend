@@ -5,10 +5,11 @@ import HomeImg from '../../assets/HomeImg.svg'
 import Map from '../../assets/Map.svg'
 import naturopathy from '../../assets/naturopathy.svg'
 import bodychakras from '../../assets/3921140.jpg'
-import { Input } from 'antd';
+import { Button, Input } from 'antd';
 import { AudioOutlined } from '@ant-design/icons';
 import { cities, results } from '../../constants';
 import { useSpeechContext } from '@speechly/react-client';
+import { nearbysearch } from '../../api/api';
 
 export default function Home() {
   const { speechState, segment, toggleRecording } = useSpeechContext()
@@ -41,6 +42,7 @@ export default function Home() {
  
   }
   useEffect(() => {
+    nearbysearch();
      if(segment){
       let res = "";
       segment.words.map((item)=>{
@@ -124,6 +126,7 @@ export default function Home() {
             <a href='/hospitals'>Hospitals</a>
             <a>Language</a>
             <a href='/About'>About us</a>
+            <Button className={styles.login}>Login</Button>
           </div>
       {/* <div className="homepage"> */}
         <div className={styles.left}><img src={naturopathy} alt="logo" /></div>

@@ -23,7 +23,7 @@ export default function HospitalCard(props) {
   > 
     <div className={styles.name}>{item.name}</div>
     <div className={styles.address}>{item.vicinity}</div>
-    <Rate disabled defaultValue={item.rating} /> 
+    <Rate allowHalf disabled defaultValue={item.rating} /> 
     {/* <span className={styles.rate}>({item.user_ratings_total})</span> */}
 
     <div className={styles.bottom}>

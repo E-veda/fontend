@@ -11,6 +11,7 @@ import styles from "./HospitalPage.module.css";
 import sectionstyles from '../sections/section.module.css';
 import { results } from "../../constants";
 import { useLocation } from "react-router-dom";
+import ReviewCard from "../ReviewCard/ReviewCard";
 const { TabPane } = Tabs;
 const containerStyle = {
   height: "92vh",
@@ -99,7 +100,7 @@ export default function HospitalPage() {
                   {data.about ? data.about : ""}
                 </div>
                 <div className={styles.stars}>
-                <Rate disabled defaultValue={data.rating} />
+                <Rate allowHalf disabled defaultValue={data.rating} />
               </div>
                 <br />
                 {/* <div className={styles.about}>
@@ -111,7 +112,7 @@ export default function HospitalPage() {
                 <ol>{data.services ? data.services.split(',').map((item)=><li className={styles.services}>{item}</li>) : ""}</ol>
               </TabPane>
               <TabPane tab="Reviews" key="3">
-                {data.Reviews ? data.Reviews : ""}
+                {data.reviews ? data.reviews.map((item,index)=><ReviewCard index={index} data={item}/>) : ""}
               </TabPane>
             </Tabs>
           </div>
